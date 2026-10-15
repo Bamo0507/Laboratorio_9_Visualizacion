@@ -1,0 +1,159 @@
+{
+  "periodos": {
+    "pre_pandemia": [
+      2015,
+      2019
+    ],
+    "post_pandemia": [
+      2023,
+      2025
+    ]
+  },
+  "base_indice": "promedio mensual del periodo = 100",
+  "datos": [
+    {
+      "mes": 1,
+      "nombre": "ene",
+      "pre_pandemia": {
+        "promedio": 285467,
+        "indice": 99.9
+      },
+      "post_pandemia": {
+        "promedio": 280147,
+        "indice": 105.7
+      }
+    },
+    {
+      "mes": 2,
+      "nombre": "feb",
+      "pre_pandemia": {
+        "promedio": 236516,
+        "indice": 82.8
+      },
+      "post_pandemia": {
+        "promedio": 239724,
+        "indice": 90.4
+      }
+    },
+    {
+      "mes": 3,
+      "nombre": "mar",
+      "pre_pandemia": {
+        "promedio": 323768,
+        "indice": 113.3
+      },
+      "post_pandemia": {
+        "promedio": 284229,
+        "indice": 107.2
+      }
+    },
+    {
+      "mes": 4,
+      "nombre": "abr",
+      "pre_pandemia": {
+        "promedio": 306723,
+        "indice": 107.3
+      },
+      "post_pandemia": {
+        "promedio": 274819,
+        "indice": 103.7
+      }
+    },
+    {
+      "mes": 5,
+      "nombre": "may",
+      "pre_pandemia": {
+        "promedio": 254227,
+        "indice": 88.9
+      },
+      "post_pandemia": {
+        "promedio": 233327,
+        "indice": 88.0
+      }
+    },
+    {
+      "mes": 6,
+      "nombre": "jun",
+      "pre_pandemia": {
+        "promedio": 272793,
+        "indice": 95.4
+      },
+      "post_pandemia": {
+        "promedio": 237850,
+        "indice": 89.7
+      }
+    },
+    {
+      "mes": 7,
+      "nombre": "jul",
+      "pre_pandemia": {
+        "promedio": 303251,
+        "indice": 106.1
+      },
+      "post_pandemia": {
+        "promedio": 269330,
+        "indice": 101.6
+      }
+    },
+    {
+      "mes": 8,
+      "nombre": "ago",
+      "pre_pandemia": {
+        "promedio": 299318,
+        "indice": 104.7
+      },
+      "post_pandemia": {
+        "promedio": 280132,
+        "indice": 105.7
+      }
+    },
+    {
+      "mes": 9,
+      "nombre": "sep",
+      "pre_pandemia": {
+        "promedio": 235649,
+        "indice": 82.4
+      },
+      "post_pandemia": {
+        "promedio": 217405,
+        "indice": 82.0
+      }
+    },
+    {
+      "mes": 10,
+      "nombre": "oct",
+      "pre_pandemia": {
+        "promedio": 258531,
+        "indice": 90.5
+      },
+      "post_pandemia": {
+        "promedio": 223362,
+        "indice": 84.2
+      }
+    },
+    {
+      "mes": 11,
+      "nombre": "nov",
+      "pre_pandemia": {
+        "promedio": 283576,
+        "indice": 99.2
+      },
+      "post_pandemia": {
+        "promedio": 289718,
+        "indice": 109.3
+      }
+    },
+    {
+      "mes": 12,
+      "nombre": "dic",
+      "pre_pandemia": {
+        "promedio": 369896,
+        "indice": 129.4
+      },
+      "post_pandemia": {
+        "promedio": 351473,
+        "indice": 132.6
+      }
+    }
+  ]
+}

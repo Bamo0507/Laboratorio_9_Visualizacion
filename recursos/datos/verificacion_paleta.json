@@ -1,0 +1,28 @@
+{
+  "contraste_sobre_fondo": {
+    "texto": 17.4,
+    "texto_secundario": 7.0,
+    "acento_texto": 5.42,
+    "principal": 8.29,
+    "principal_claro": 3.04,
+    "acento": 4.35
+  },
+  "pares_distinguibles": {
+    "principal_vs_acento": {
+      "grises": 1.91,
+      "deuteranopia": 2.27
+    },
+    "principal_vs_contexto": {
+      "grises": 4.43,
+      "deuteranopia": 4.66
+    },
+    "acento_vs_contexto": {
+      "grises": 2.32,
+      "deuteranopia": 2.05
+    },
+    "principal_vs_principal_claro": {
+      "grises": 2.74,
+      "deuteranopia": 2.76
+    }
+  }
+}

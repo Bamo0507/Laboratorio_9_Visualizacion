@@ -1,0 +1,593 @@
+{
+  "modelo": "Suavizamiento exponencial simple (sobre log de viajeros)",
+  "entrenamiento": {
+    "desde": "2009-01",
+    "hasta": "2021-03"
+  },
+  "alpha": 1.0,
+  "metricas": {
+    "mae": 158777,
+    "rmse": 173709
+  },
+  "cobertura_pct": {
+    "80": 100.0,
+    "95": 100.0
+  },
+  "recorte_grafico": {
+    "nivel": "80",
+    "tope_eje": 500000,
+    "primer_mes_recortado": "2022-10",
+    "meses_recortados": 45,
+    "superior_final": 2322852,
+    "fecha_final": "2026-06"
+  },
+  "datos": [
+    {
+      "fecha": "2021-04-01",
+      "real": 59743,
+      "estimacion": 85017,
+      "inferior_80": 56043,
+      "superior_80": 128971,
+      "inferior_95": 44949,
+      "superior_95": 160805
+    },
+    {
+      "fecha": "2021-05-01",
+      "real": 73873,
+      "estimacion": 85017,
+      "inferior_80": 47158,
+      "superior_80": 153270,
+      "inferior_95": 34520,
+      "superior_95": 209387
+    },
+    {
+      "fecha": "2021-06-01",
+      "real": 95146,
+      "estimacion": 85017,
+      "inferior_80": 41308,
+      "superior_80": 174977,
+      "inferior_95": 28190,
+      "superior_95": 256403
+    },
+    {
+      "fecha": "2021-07-01",
+      "real": 97595,
+      "estimacion": 85017,
+      "inferior_80": 36944,
+      "superior_80": 195648,
+      "inferior_95": 23764,
+      "superior_95": 304151
+    },
+    {
+      "fecha": "2021-08-01",
+      "real": 72327,
+      "estimacion": 85017,
+      "inferior_80": 33482,
+      "superior_80": 215874,
+      "inferior_95": 20445,
+      "superior_95": 353534
+    },
+    {
+      "fecha": "2021-09-01",
+      "real": 67023,
+      "estimacion": 85017,
+      "inferior_80": 30633,
+      "superior_80": 235953,
+      "inferior_95": 17845,
+      "superior_95": 405046
+    },
+    {
+      "fecha": "2021-10-01",
+      "real": 83528,
+      "estimacion": 85017,
+      "inferior_80": 28227,
+      "superior_80": 256062,
+      "inferior_95": 15747,
+      "superior_95": 459015
+    },
+    {
+      "fecha": "2021-11-01",
+      "real": 98578,
+      "estimacion": 85017,
+      "inferior_80": 26158,
+      "superior_80": 276317,
+      "inferior_95": 14016,
+      "superior_95": 515692
+    },
+    {
+      "fecha": "2021-12-01",
+      "real": 223569,
+      "estimacion": 85017,
+      "inferior_80": 24353,
+      "superior_80": 296797,
+      "inferior_95": 12564,
+      "superior_95": 575281
+    },
+    {
+      "fecha": "2022-01-01",
+      "real": 134303,
+      "estimacion": 85017,
+      "inferior_80": 22761,
+      "superior_80": 317562,
+      "inferior_95": 11330,
+      "superior_95": 637965
+    },
+    {
+      "fecha": "2022-02-01",
+      "real": 193904,
+      "estimacion": 85017,
+      "inferior_80": 21343,
+      "superior_80": 338659,
+      "inferior_95": 10268,
+      "superior_95": 703913
+    },
+    {
+      "fecha": "2022-03-01",
+      "real": 227886,
+      "estimacion": 85017,
+      "inferior_80": 20071,
+      "superior_80": 360125,
+      "inferior_95": 9347,
+      "superior_95": 773284
+    },
+    {
+      "fecha": "2022-04-01",
+      "real": 292648,
+      "estimacion": 85017,
+      "inferior_80": 18922,
+      "superior_80": 381992,
+      "inferior_95": 8541,
+      "superior_95": 846235
+    },
+    {
+      "fecha": "2022-05-01",
+      "real": 260013,
+      "estimacion": 85017,
+      "inferior_80": 17878,
+      "superior_80": 404284,
+      "inferior_95": 7832,
+      "superior_95": 922920
+    },
+    {
+      "fecha": "2022-06-01",
+      "real": 269366,
+      "estimacion": 85017,
+      "inferior_80": 16926,
+      "superior_80": 427026,
+      "inferior_95": 7203,
+      "superior_95": 1003491
+    },
+    {
+      "fecha": "2022-07-01",
+      "real": 306246,
+      "estimacion": 85017,
+      "inferior_80": 16054,
+      "superior_80": 450239,
+      "inferior_95": 6643,
+      "superior_95": 1088105
+    },
+    {
+      "fecha": "2022-08-01",
+      "real": 297602,
+      "estimacion": 85017,
+      "inferior_80": 15251,
+      "superior_80": 473939,
+      "inferior_95": 6141,
+      "superior_95": 1176915
+    },
+    {
+      "fecha": "2022-09-01",
+      "real": 246464,
+      "estimacion": 85017,
+      "inferior_80": 14510,
+      "superior_80": 498146,
+      "inferior_95": 5691,
+      "superior_95": 1270081
+    },
+    {
+      "fecha": "2022-10-01",
+      "real": 281938,
+      "estimacion": 85017,
+      "inferior_80": 13824,
+      "superior_80": 522875,
+      "inferior_95": 5285,
+      "superior_95": 1367762
+    },
+    {
+      "fecha": "2022-11-01",
+      "real": 318693,
+      "estimacion": 85017,
+      "inferior_80": 13186,
+      "superior_80": 548140,
+      "inferior_95": 4917,
+      "superior_95": 1470123
+    },
+    {
+      "fecha": "2022-12-01",
+      "real": 400266,
+      "estimacion": 85017,
+      "inferior_80": 12593,
+      "superior_80": 573957,
+      "inferior_95": 4582,
+      "superior_95": 1577329
+    },
+    {
+      "fecha": "2023-01-01",
+      "real": 258166,
+      "estimacion": 85017,
+      "inferior_80": 12040,
+      "superior_80": 600339,
+      "inferior_95": 4278,
+      "superior_95": 1689551
+    },
+    {
+      "fecha": "2023-02-01",
+      "real": 198752,
+      "estimacion": 85017,
+      "inferior_80": 11522,
+      "superior_80": 627300,
+      "inferior_95": 4000,
+      "superior_95": 1806964
+    },
+    {
+      "fecha": "2023-03-01",
+      "real": 251840,
+      "estimacion": 85017,
+      "inferior_80": 11038,
+      "superior_80": 654852,
+      "inferior_95": 3746,
+      "superior_95": 1929745
+    },
+    {
+      "fecha": "2023-04-01",
+      "real": 283179,
+      "estimacion": 85017,
+      "inferior_80": 10583,
+      "superior_80": 683009,
+      "inferior_95": 3512,
+      "superior_95": 2058076
+    },
+    {
+      "fecha": "2023-05-01",
+      "real": 213191,
+      "estimacion": 85017,
+      "inferior_80": 10155,
+      "superior_80": 711783,
+      "inferior_95": 3297,
+      "superior_95": 2192144
+    },
+    {
+      "fecha": "2023-06-01",
+      "real": 224580,
+      "estimacion": 85017,
+      "inferior_80": 9752,
+      "superior_80": 741185,
+      "inferior_95": 3099,
+      "superior_95": 2332140
+    },
+    {
+      "fecha": "2023-07-01",
+      "real": 257627,
+      "estimacion": 85017,
+      "inferior_80": 9372,
+      "superior_80": 771230,
+      "inferior_95": 2917,
+      "superior_95": 2478259
+    },
+    {
+      "fecha": "2023-08-01",
+      "real": 264514,
+      "estimacion": 85017,
+      "inferior_80": 9013,
+      "superior_80": 801927,
+      "inferior_95": 2748,
+      "superior_95": 2630701
+    },
+    {
+      "fecha": "2023-09-01",
+      "real": 218486,
+      "estimacion": 85017,
+      "inferior_80": 8674,
+      "superior_80": 833291,
+      "inferior_95": 2591,
+      "superior_95": 2789671
+    },
+    {
+      "fecha": "2023-10-01",
+      "real": 164499,
+      "estimacion": 85017,
+      "inferior_80": 8353,
+      "superior_80": 865332,
+      "inferior_95": 2446,
+      "superior_95": 2955380
+    },
+    {
+      "fecha": "2023-11-01",
+      "real": 255894,
+      "estimacion": 85017,
+      "inferior_80": 8048,
+      "superior_80": 898062,
+      "inferior_95": 2311,
+      "superior_95": 3128042
+    },
+    {
+      "fecha": "2023-12-01",
+      "real": 327098,
+      "estimacion": 85017,
+      "inferior_80": 7760,
+      "superior_80": 931494,
+      "inferior_95": 2185,
+      "superior_95": 3307878
+    },
+    {
+      "fecha": "2024-01-01",
+      "real": 292732,
+      "estimacion": 85017,
+      "inferior_80": 7485,
+      "superior_80": 965640,
+      "inferior_95": 2068,
+      "superior_95": 3495113
+    },
+    {
+      "fecha": "2024-02-01",
+      "real": 265991,
+      "estimacion": 85017,
+      "inferior_80": 7224,
+      "superior_80": 1000511,
+      "inferior_95": 1959,
+      "superior_95": 3689978
+    },
+    {
+      "fecha": "2024-03-01",
+      "real": 322310,
+      "estimacion": 85017,
+      "inferior_80": 6976,
+      "superior_80": 1036120,
+      "inferior_95": 1857,
+      "superior_95": 3892711
+    },
+    {
+      "fecha": "2024-04-01",
+      "real": 240989,
+      "estimacion": 85017,
+      "inferior_80": 6739,
+      "superior_80": 1072479,
+      "inferior_95": 1761,
+      "superior_95": 4103553
+    },
+    {
+      "fecha": "2024-05-01",
+      "real": 238808,
+      "estimacion": 85017,
+      "inferior_80": 6514,
+      "superior_80": 1109600,
+      "inferior_95": 1672,
+      "superior_95": 4322753
+    },
+    {
+      "fecha": "2024-06-01",
+      "real": 234781,
+      "estimacion": 85017,
+      "inferior_80": 6299,
+      "superior_80": 1147495,
+      "inferior_95": 1588,
+      "superior_95": 4550565
+    },
+    {
+      "fecha": "2024-07-01",
+      "real": 266975,
+      "estimacion": 85017,
+      "inferior_80": 6093,
+      "superior_80": 1186177,
+      "inferior_95": 1510,
+      "superior_95": 4787249
+    },
+    {
+      "fecha": "2024-08-01",
+      "real": 282102,
+      "estimacion": 85017,
+      "inferior_80": 5897,
+      "superior_80": 1225657,
+      "inferior_95": 1436,
+      "superior_95": 5033072
+    },
+    {
+      "fecha": "2024-09-01",
+      "real": 215659,
+      "estimacion": 85017,
+      "inferior_80": 5710,
+      "superior_80": 1265950,
+      "inferior_95": 1367,
+      "superior_95": 5288307
+    },
+    {
+      "fecha": "2024-10-01",
+      "real": 249666,
+      "estimacion": 85017,
+      "inferior_80": 5530,
+      "superior_80": 1307066,
+      "inferior_95": 1302,
+      "superior_95": 5553233
+    },
+    {
+      "fecha": "2024-11-01",
+      "real": 302674,
+      "estimacion": 85017,
+      "inferior_80": 5358,
+      "superior_80": 1349019,
+      "inferior_95": 1240,
+      "superior_95": 5828137
+    },
+    {
+      "fecha": "2024-12-01",
+      "real": 361750,
+      "estimacion": 85017,
+      "inferior_80": 5193,
+      "superior_80": 1391821,
+      "inferior_95": 1182,
+      "superior_95": 6113310
+    },
+    {
+      "fecha": "2025-01-01",
+      "real": 289544,
+      "estimacion": 85017,
+      "inferior_80": 5035,
+      "superior_80": 1435487,
+      "inferior_95": 1128,
+      "superior_95": 6409052
+    },
+    {
+      "fecha": "2025-02-01",
+      "real": 254429,
+      "estimacion": 85017,
+      "inferior_80": 4884,
+      "superior_80": 1480027,
+      "inferior_95": 1076,
+      "superior_95": 6715670
+    },
+    {
+      "fecha": "2025-03-01",
+      "real": 278538,
+      "estimacion": 85017,
+      "inferior_80": 4738,
+      "superior_80": 1525456,
+      "inferior_95": 1028,
+      "superior_95": 7033478
+    },
+    {
+      "fecha": "2025-04-01",
+      "real": 300288,
+      "estimacion": 85017,
+      "inferior_80": 4599,
+      "superior_80": 1571788,
+      "inferior_95": 982,
+      "superior_95": 7362797
+    },
+    {
+      "fecha": "2025-05-01",
+      "real": 247982,
+      "estimacion": 85017,
+      "inferior_80": 4464,
+      "superior_80": 1619034,
+      "inferior_95": 938,
+      "superior_95": 7703955
+    },
+    {
+      "fecha": "2025-06-01",
+      "real": 254190,
+      "estimacion": 85017,
+      "inferior_80": 4335,
+      "superior_80": 1667209,
+      "inferior_95": 897,
+      "superior_95": 8057289
+    },
+    {
+      "fecha": "2025-07-01",
+      "real": 283389,
+      "estimacion": 85017,
+      "inferior_80": 4211,
+      "superior_80": 1716327,
+      "inferior_95": 858,
+      "superior_95": 8423141
+    },
+    {
+      "fecha": "2025-08-01",
+      "real": 293781,
+      "estimacion": 85017,
+      "inferior_80": 4092,
+      "superior_80": 1766401,
+      "inferior_95": 821,
+      "superior_95": 8801864
+    },
+    {
+      "fecha": "2025-09-01",
+      "real": 218070,
+      "estimacion": 85017,
+      "inferior_80": 3977,
+      "superior_80": 1817444,
+      "inferior_95": 786,
+      "superior_95": 9193818
+    },
+    {
+      "fecha": "2025-10-01",
+      "real": 255921,
+      "estimacion": 85017,
+      "inferior_80": 3866,
+      "superior_80": 1869472,
+      "inferior_95": 753,
+      "superior_95": 9599370
+    },
+    {
+      "fecha": "2025-11-01",
+      "real": 310586,
+      "estimacion": 85017,
+      "inferior_80": 3760,
+      "superior_80": 1922498,
+      "inferior_95": 721,
+      "superior_95": 10018896
+    },
+    {
+      "fecha": "2025-12-01",
+      "real": 365573,
+      "estimacion": 85017,
+      "inferior_80": 3657,
+      "superior_80": 1976537,
+      "inferior_95": 691,
+      "superior_95": 10452782
+    },
+    {
+      "fecha": "2026-01-01",
+      "real": 300664,
+      "estimacion": 85017,
+      "inferior_80": 3558,
+      "superior_80": 2031603,
+      "inferior_95": 663,
+      "superior_95": 10901421
+    },
+    {
+      "fecha": "2026-02-01",
+      "real": 236844,
+      "estimacion": 85017,
+      "inferior_80": 3462,
+      "superior_80": 2087710,
+      "inferior_95": 636,
+      "superior_95": 11365215
+    },
+    {
+      "fecha": "2026-03-01",
+      "real": 291160,
+      "estimacion": 85017,
+      "inferior_80": 3370,
+      "superior_80": 2144874,
+      "inferior_95": 610,
+      "superior_95": 11844575
+    },
+    {
+      "fecha": "2026-04-01",
+      "real": 260951,
+      "estimacion": 85017,
+      "inferior_80": 3281,
+      "superior_80": 2203108,
+      "inferior_95": 586,
+      "superior_95": 12339922
+    },
+    {
+      "fecha": "2026-05-01",
+      "real": 241312,
+      "estimacion": 85017,
+      "inferior_80": 3195,
+      "superior_80": 2262430,
+      "inferior_95": 562,
+      "superior_95": 12851686
+    },
+    {
+      "fecha": "2026-06-01",
+      "real": 245688,
+      "estimacion": 85017,
+      "inferior_80": 3112,
+      "superior_80": 2322852,
+      "inferior_95": 540,
+      "superior_95": 13380306
+    }
+  ]
+}

@@ -1,0 +1,1265 @@
+{
+  "unidad": "viajeros por mes (Turista + Excursionista)",
+  "datos": [
+    {
+      "fecha": "2009-01-01",
+      "viajeros": 149944.03,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2009-02-01",
+      "viajeros": 127303.69,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2009-03-01",
+      "viajeros": 158795.67,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2009-04-01",
+      "viajeros": 172013.47,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2009-05-01",
+      "viajeros": 124559.52,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2009-06-01",
+      "viajeros": 151442.8,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2009-07-01",
+      "viajeros": 137616.95,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2009-08-01",
+      "viajeros": 179344.04,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2009-09-01",
+      "viajeros": 132791.13,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2009-10-01",
+      "viajeros": 153153.61,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2009-11-01",
+      "viajeros": 173623.27,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2009-12-01",
+      "viajeros": 219594.65,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2010-01-01",
+      "viajeros": 162333.27,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2010-02-01",
+      "viajeros": 132527.46,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2010-03-01",
+      "viajeros": 163351.09,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2010-04-01",
+      "viajeros": 170870.91,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2010-05-01",
+      "viajeros": 141291.61,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2010-06-01",
+      "viajeros": 155468.95,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2010-07-01",
+      "viajeros": 199667.83,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2010-08-01",
+      "viajeros": 183931.03,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2010-09-01",
+      "viajeros": 130760.35,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2010-10-01",
+      "viajeros": 157632.12,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2010-11-01",
+      "viajeros": 179538.34,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2010-12-01",
+      "viajeros": 227411.05,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2011-01-01",
+      "viajeros": 169708.56,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2011-02-01",
+      "viajeros": 139869.87,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2011-03-01",
+      "viajeros": 169957.79,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2011-04-01",
+      "viajeros": 191655.76,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2011-05-01",
+      "viajeros": 145923.55,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2011-06-01",
+      "viajeros": 163014.47,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2011-07-01",
+      "viajeros": 200521.0,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2011-08-01",
+      "viajeros": 174775.49,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2011-09-01",
+      "viajeros": 141183.84,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2011-10-01",
+      "viajeros": 152049.08,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2011-11-01",
+      "viajeros": 187320.08,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2011-12-01",
+      "viajeros": 243735.11,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2012-01-01",
+      "viajeros": 177125.96,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2012-02-01",
+      "viajeros": 147819.44,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2012-03-01",
+      "viajeros": 186237.21,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2012-04-01",
+      "viajeros": 182891.24,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2012-05-01",
+      "viajeros": 152137.51,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2012-06-01",
+      "viajeros": 173240.56,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2012-07-01",
+      "viajeros": 199340.37,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2012-08-01",
+      "viajeros": 170666.4,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2012-09-01",
+      "viajeros": 147847.53,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2012-10-01",
+      "viajeros": 167995.44,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2012-11-01",
+      "viajeros": 195400.07,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2012-12-01",
+      "viajeros": 238839.75,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2013-01-01",
+      "viajeros": 170858.7,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2013-02-01",
+      "viajeros": 140163.9,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2013-03-01",
+      "viajeros": 217092.56,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2013-04-01",
+      "viajeros": 179526.04,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2013-05-01",
+      "viajeros": 179243.66,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2013-06-01",
+      "viajeros": 197164.99,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2013-07-01",
+      "viajeros": 211596.02,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2013-08-01",
+      "viajeros": 197150.94,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2013-09-01",
+      "viajeros": 163867.06,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2013-10-01",
+      "viajeros": 167624.47,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2013-11-01",
+      "viajeros": 202965.02,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2013-12-01",
+      "viajeros": 262449.4,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2014-01-01",
+      "viajeros": 219460.35,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2014-02-01",
+      "viajeros": 173476.25,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2014-03-01",
+      "viajeros": 200137.33,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2014-04-01",
+      "viajeros": 229359.13,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2014-05-01",
+      "viajeros": 190264.56,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2014-06-01",
+      "viajeros": 200093.47,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2014-07-01",
+      "viajeros": 237558.59,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2014-08-01",
+      "viajeros": 225101.63,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2014-09-01",
+      "viajeros": 187684.78,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2014-10-01",
+      "viajeros": 223650.87,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2014-11-01",
+      "viajeros": 248017.61,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2014-12-01",
+      "viajeros": 325372.73,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2015-01-01",
+      "viajeros": 244120.95,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2015-02-01",
+      "viajeros": 197207.25,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2015-03-01",
+      "viajeros": 249587.41,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2015-04-01",
+      "viajeros": 247561.51,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2015-05-01",
+      "viajeros": 226414.61,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2015-06-01",
+      "viajeros": 245382.69,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2015-07-01",
+      "viajeros": 253035.18,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2015-08-01",
+      "viajeros": 245666.16,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2015-09-01",
+      "viajeros": 206700.77,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2015-10-01",
+      "viajeros": 227800.28,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2015-11-01",
+      "viajeros": 245184.01,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2015-12-01",
+      "viajeros": 329225.24,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2016-01-01",
+      "viajeros": 262106.63,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2016-02-01",
+      "viajeros": 214638.73,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2016-03-01",
+      "viajeros": 322030.33,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2016-04-01",
+      "viajeros": 211444.92,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2016-05-01",
+      "viajeros": 223932.93,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2016-06-01",
+      "viajeros": 226287.3,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2016-07-01",
+      "viajeros": 269012.24,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2016-08-01",
+      "viajeros": 258799.93,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2016-09-01",
+      "viajeros": 186819.31,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2016-10-01",
+      "viajeros": 249121.26,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2016-11-01",
+      "viajeros": 251531.98,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2016-12-01",
+      "viajeros": 321301.19,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2017-01-01",
+      "viajeros": 259641.61,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2017-02-01",
+      "viajeros": 233718.23,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2017-03-01",
+      "viajeros": 294444.48,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2017-04-01",
+      "viajeros": 377828.73,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2017-05-01",
+      "viajeros": 243741.79,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2017-06-01",
+      "viajeros": 247853.41,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2017-07-01",
+      "viajeros": 291574.27,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2017-08-01",
+      "viajeros": 274293.59,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2017-09-01",
+      "viajeros": 213696.6,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2017-10-01",
+      "viajeros": 239055.67,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2017-11-01",
+      "viajeros": 275693.42,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2017-12-01",
+      "viajeros": 356109.5,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2018-01-01",
+      "viajeros": 303819.22,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2018-02-01",
+      "viajeros": 251666.99,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2018-03-01",
+      "viajeros": 393020.78,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2018-04-01",
+      "viajeros": 308239.86,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2018-05-01",
+      "viajeros": 277750.08,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2018-06-01",
+      "viajeros": 311280.35,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2018-07-01",
+      "viajeros": 337300.59,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2018-08-01",
+      "viajeros": 352316.57,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2018-09-01",
+      "viajeros": 272777.07,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2018-10-01",
+      "viajeros": 282172.21,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2018-11-01",
+      "viajeros": 309687.64,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2018-12-01",
+      "viajeros": 393729.49,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2019-01-01",
+      "viajeros": 357645.75,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2019-02-01",
+      "viajeros": 285350.91,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2019-03-01",
+      "viajeros": 359757.99,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2019-04-01",
+      "viajeros": 388538.55,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2019-05-01",
+      "viajeros": 299297.34,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2019-06-01",
+      "viajeros": 333161.56,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2019-07-01",
+      "viajeros": 365333.69,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2019-08-01",
+      "viajeros": 365512.75,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2019-09-01",
+      "viajeros": 298250.08,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2019-10-01",
+      "viajeros": 294503.99,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2019-11-01",
+      "viajeros": 335783.93,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2019-12-01",
+      "viajeros": 449114.07,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2020-01-01",
+      "viajeros": 388222.6,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2020-02-01",
+      "viajeros": 317917.98,
+      "conjunto": "entrenamiento",
+      "pandemia": false
+    },
+    {
+      "fecha": "2020-03-01",
+      "viajeros": 155415.58,
+      "conjunto": "entrenamiento",
+      "pandemia": true
+    },
+    {
+      "fecha": "2020-04-01",
+      "viajeros": 10039.0,
+      "conjunto": "entrenamiento",
+      "pandemia": true
+    },
+    {
+      "fecha": "2020-05-01",
+      "viajeros": 9779.0,
+      "conjunto": "entrenamiento",
+      "pandemia": true
+    },
+    {
+      "fecha": "2020-06-01",
+      "viajeros": 11817.0,
+      "conjunto": "entrenamiento",
+      "pandemia": true
+    },
+    {
+      "fecha": "2020-07-01",
+      "viajeros": 13484.0,
+      "conjunto": "entrenamiento",
+      "pandemia": true
+    },
+    {
+      "fecha": "2020-08-01",
+      "viajeros": 15357.0,
+      "conjunto": "entrenamiento",
+      "pandemia": true
+    },
+    {
+      "fecha": "2020-09-01",
+      "viajeros": 12572.49,
+      "conjunto": "entrenamiento",
+      "pandemia": true
+    },
+    {
+      "fecha": "2020-10-01",
+      "viajeros": 16680.78,
+      "conjunto": "entrenamiento",
+      "pandemia": true
+    },
+    {
+      "fecha": "2020-11-01",
+      "viajeros": 52865.0,
+      "conjunto": "entrenamiento",
+      "pandemia": true
+    },
+    {
+      "fecha": "2020-12-01",
+      "viajeros": 55620.0,
+      "conjunto": "entrenamiento",
+      "pandemia": true
+    },
+    {
+      "fecha": "2021-01-01",
+      "viajeros": 89960.0,
+      "conjunto": "entrenamiento",
+      "pandemia": true
+    },
+    {
+      "fecha": "2021-02-01",
+      "viajeros": 52605.0,
+      "conjunto": "entrenamiento",
+      "pandemia": true
+    },
+    {
+      "fecha": "2021-03-01",
+      "viajeros": 85017.4,
+      "conjunto": "entrenamiento",
+      "pandemia": true
+    },
+    {
+      "fecha": "2021-04-01",
+      "viajeros": 59743.19,
+      "conjunto": "prueba",
+      "pandemia": true
+    },
+    {
+      "fecha": "2021-05-01",
+      "viajeros": 73873.0,
+      "conjunto": "prueba",
+      "pandemia": true
+    },
+    {
+      "fecha": "2021-06-01",
+      "viajeros": 95146.0,
+      "conjunto": "prueba",
+      "pandemia": true
+    },
+    {
+      "fecha": "2021-07-01",
+      "viajeros": 97594.66,
+      "conjunto": "prueba",
+      "pandemia": true
+    },
+    {
+      "fecha": "2021-08-01",
+      "viajeros": 72327.0,
+      "conjunto": "prueba",
+      "pandemia": true
+    },
+    {
+      "fecha": "2021-09-01",
+      "viajeros": 67023.0,
+      "conjunto": "prueba",
+      "pandemia": true
+    },
+    {
+      "fecha": "2021-10-01",
+      "viajeros": 83528.0,
+      "conjunto": "prueba",
+      "pandemia": true
+    },
+    {
+      "fecha": "2021-11-01",
+      "viajeros": 98578.0,
+      "conjunto": "prueba",
+      "pandemia": true
+    },
+    {
+      "fecha": "2021-12-01",
+      "viajeros": 223569.13,
+      "conjunto": "prueba",
+      "pandemia": true
+    },
+    {
+      "fecha": "2022-01-01",
+      "viajeros": 134303.0,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2022-02-01",
+      "viajeros": 193903.6,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2022-03-01",
+      "viajeros": 227886.0,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2022-04-01",
+      "viajeros": 292648.0,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2022-05-01",
+      "viajeros": 260013.0,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2022-06-01",
+      "viajeros": 269366.0,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2022-07-01",
+      "viajeros": 306246.0,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2022-08-01",
+      "viajeros": 297602.0,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2022-09-01",
+      "viajeros": 246464.0,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2022-10-01",
+      "viajeros": 281938.0,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2022-11-01",
+      "viajeros": 318693.0,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2022-12-01",
+      "viajeros": 400266.0,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2023-01-01",
+      "viajeros": 258166.19,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2023-02-01",
+      "viajeros": 198751.86,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2023-03-01",
+      "viajeros": 251839.5,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2023-04-01",
+      "viajeros": 283179.26,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2023-05-01",
+      "viajeros": 213191.04,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2023-06-01",
+      "viajeros": 224580.17,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2023-07-01",
+      "viajeros": 257626.95,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2023-08-01",
+      "viajeros": 264514.09,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2023-09-01",
+      "viajeros": 218486.48,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2023-10-01",
+      "viajeros": 164499.39,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2023-11-01",
+      "viajeros": 255894.28,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2023-12-01",
+      "viajeros": 327097.61,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2024-01-01",
+      "viajeros": 292731.87,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2024-02-01",
+      "viajeros": 265990.67,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2024-03-01",
+      "viajeros": 322310.39,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2024-04-01",
+      "viajeros": 240988.82,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2024-05-01",
+      "viajeros": 238807.95,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2024-06-01",
+      "viajeros": 234781.23,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2024-07-01",
+      "viajeros": 266974.96,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2024-08-01",
+      "viajeros": 282101.83,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2024-09-01",
+      "viajeros": 215658.81,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2024-10-01",
+      "viajeros": 249665.7,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2024-11-01",
+      "viajeros": 302674.08,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2024-12-01",
+      "viajeros": 361749.69,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2025-01-01",
+      "viajeros": 289543.6,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2025-02-01",
+      "viajeros": 254428.89,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2025-03-01",
+      "viajeros": 278538.25,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2025-04-01",
+      "viajeros": 300287.69,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2025-05-01",
+      "viajeros": 247981.93,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2025-06-01",
+      "viajeros": 254190.1,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2025-07-01",
+      "viajeros": 283388.7,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2025-08-01",
+      "viajeros": 293780.52,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2025-09-01",
+      "viajeros": 218069.51,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2025-10-01",
+      "viajeros": 255920.93,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2025-11-01",
+      "viajeros": 310585.52,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2025-12-01",
+      "viajeros": 365573.02,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2026-01-01",
+      "viajeros": 300664.08,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2026-02-01",
+      "viajeros": 236844.11,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2026-03-01",
+      "viajeros": 291160.37,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2026-04-01",
+      "viajeros": 260951.05,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2026-05-01",
+      "viajeros": 241312.3,
+      "conjunto": "prueba",
+      "pandemia": false
+    },
+    {
+      "fecha": "2026-06-01",
+      "viajeros": 245687.58,
+      "conjunto": "prueba",
+      "pandemia": false
+    }
+  ]
+}

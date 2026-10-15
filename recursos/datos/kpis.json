@@ -1,0 +1,33 @@
+{
+  "total_acumulado": {
+    "desde": "2009-01",
+    "hasta": "2026-06",
+    "viajeros": 46711913
+  },
+  "anio_pico": {
+    "anio": 2019,
+    "viajeros": 4132251
+  },
+  "crecimiento_hasta_pico_pct": {
+    "desde": 2009,
+    "hasta": 2019,
+    "valor": 119.8
+  },
+  "mes_pico": {
+    "fecha": "2019-12",
+    "viajeros": 449114
+  },
+  "mes_minimo_pandemia": {
+    "fecha": "2020-05",
+    "viajeros": 9779
+  },
+  "caida_pandemia_pct": 97.2,
+  "recuperacion_vs_pico_pct": {
+    "anio": 2025,
+    "valor": 81.1
+  },
+  "variacion_interanual_parcial_pct": {
+    "periodo": "ene-jun 2026 vs 2025",
+    "valor": -3.0
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "base": "Turista + Excursionista, 2009-01 a 2026-06",
+  "vias": [
+    {
+      "nombre": "Terrestre",
+      "viajeros": 27592253,
+      "porcentaje": 59.07
+    },
+    {
+      "nombre": "Aérea",
+      "viajeros": 19019419,
+      "porcentaje": 40.72
+    },
+    {
+      "nombre": "Marítima",
+      "viajeros": 100241,
+      "porcentaje": 0.21
+    }
+  ],
+  "fronteras": [
+    {
+      "nombre": "01 La Aurora",
+      "viajeros": 18989985,
+      "porcentaje": 40.65
+    },
+    {
+      "nombre": "07 Valle Nuevo",
+      "viajeros": 10143045,
+      "porcentaje": 21.71
+    },
+    {
+      "nombre": "09 San Cristóbal",
+      "viajeros": 4183632,
+      "porcentaje": 8.96
+    },
+    {
+      "nombre": "08 Pedro de Alvarado",
+      "viajeros": 3764229,
+      "porcentaje": 8.06
+    },
+    {
+      "nombre": "10 La Ermita (Nueva Anguiatú)",
+      "viajeros": 2587072,
+      "porcentaje": 5.54
+    },
+    {
+      "nombre": "20 Melchor de Mencos",
+      "viajeros": 1782864,
+      "porcentaje": 3.82
+    },
+    {
+      "nombre": "13 El Cinchado / El Corinto",
+      "viajeros": 1213485,
+      "porcentaje": 2.6
+    },
+    {
+      "nombre": "11 Agua Caliente",
+      "viajeros": 922420,
+      "porcentaje": 1.97
+    },
+    {
+      "nombre": "12 El Florido",
+      "viajeros": 910373,
+      "porcentaje": 1.95
+    },
+    {
+      "nombre": "15 El Carmen",
+      "viajeros": 852663,
+      "porcentaje": 1.83
+    },
+    {
+      "nombre": "14 Tecún Umán",
+      "viajeros": 556896,
+      "porcentaje": 1.19
+    },
+    {
+      "nombre": "16 La Mesilla",
+      "viajeros": 448513,
+      "porcentaje": 0.96
+    },
+    {
+      "nombre": "19 Gracias a Dios",
+      "viajeros": 108423,
+      "porcentaje": 0.23
+    },
+    {
+      "nombre": "18 Bethel",
+      "viajeros": 58673,
+      "porcentaje": 0.13
+    },
+    {
+      "nombre": "05 Puerto Barrios",
+      "viajeros": 55231,
+      "porcentaje": 0.12
+    },
+    {
+      "nombre": "17 El Naranjo",
+      "viajeros": 55100,
+      "porcentaje": 0.12
+    },
+    {
+      "nombre": "06 Livingston",
+      "viajeros": 38191,
+      "porcentaje": 0.08
+    },
+    {
+      "nombre": "02 Mundo Maya",
+      "viajeros": 34249,
+      "porcentaje": 0.07
+    },
+    {
+      "nombre": "03 Puerto Quetzal",
+      "viajeros": 5888,
+      "porcentaje": 0.01
+    },
+    {
+      "nombre": "04 Santo Tomás de Castilla",
+      "viajeros": 931,
+      "porcentaje": 0.0
+    },
+    {
+      "nombre": "22 Otra frontera",
+      "viajeros": 49,
+      "porcentaje": 0.0
+    }
+  ]
+}

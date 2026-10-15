@@ -1,0 +1,113 @@
+{
+  "unidad": "viajeros por anio (Turista + Excursionista)",
+  "datos": [
+    {
+      "anio": 2009,
+      "viajeros": 1880183,
+      "meses": 12,
+      "parcial": false
+    },
+    {
+      "anio": 2010,
+      "viajeros": 2004784,
+      "meses": 12,
+      "parcial": false
+    },
+    {
+      "anio": 2011,
+      "viajeros": 2079715,
+      "meses": 12,
+      "parcial": false
+    },
+    {
+      "anio": 2012,
+      "viajeros": 2139541,
+      "meses": 12,
+      "parcial": false
+    },
+    {
+      "anio": 2013,
+      "viajeros": 2289703,
+      "meses": 12,
+      "parcial": false
+    },
+    {
+      "anio": 2014,
+      "viajeros": 2660177,
+      "meses": 12,
+      "parcial": false
+    },
+    {
+      "anio": 2015,
+      "viajeros": 2917886,
+      "meses": 12,
+      "parcial": false
+    },
+    {
+      "anio": 2016,
+      "viajeros": 2997027,
+      "meses": 12,
+      "parcial": false
+    },
+    {
+      "anio": 2017,
+      "viajeros": 3307651,
+      "meses": 12,
+      "parcial": false
+    },
+    {
+      "anio": 2018,
+      "viajeros": 3793761,
+      "meses": 12,
+      "parcial": false
+    },
+    {
+      "anio": 2019,
+      "viajeros": 4132251,
+      "meses": 12,
+      "parcial": false
+    },
+    {
+      "anio": 2020,
+      "viajeros": 1059770,
+      "meses": 12,
+      "parcial": false
+    },
+    {
+      "anio": 2021,
+      "viajeros": 1098964,
+      "meses": 12,
+      "parcial": false
+    },
+    {
+      "anio": 2022,
+      "viajeros": 3229329,
+      "meses": 12,
+      "parcial": false
+    },
+    {
+      "anio": 2023,
+      "viajeros": 2917827,
+      "meses": 12,
+      "parcial": false
+    },
+    {
+      "anio": 2024,
+      "viajeros": 3274436,
+      "meses": 12,
+      "parcial": false
+    },
+    {
+      "anio": 2025,
+      "viajeros": 3352289,
+      "meses": 12,
+      "parcial": false
+    },
+    {
+      "anio": 2026,
+      "viajeros": 1576619,
+      "meses": 6,
+      "parcial": true
+    }
+  ]
+}

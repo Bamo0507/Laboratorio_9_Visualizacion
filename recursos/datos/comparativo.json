@@ -1,0 +1,55 @@
+{
+  "periodo_normal": "2009-2019",
+  "regiones": [
+    {
+      "nombre": "América Del Centro",
+      "meses_rellenados": 0,
+      "estacionalidad_acf12": 0.55,
+      "crecimiento_2009_2019_pct": 155,
+      "volatilidad_cv": 0.36,
+      "caida_pandemia_pct": 96.4
+    },
+    {
+      "nombre": "América Del Norte",
+      "meses_rellenados": 5,
+      "estacionalidad_acf12": 0.79,
+      "crecimiento_2009_2019_pct": 45,
+      "volatilidad_cv": 0.24,
+      "caida_pandemia_pct": 97.7
+    },
+    {
+      "nombre": "Europa",
+      "meses_rellenados": 5,
+      "estacionalidad_acf12": 0.8,
+      "crecimiento_2009_2019_pct": 26,
+      "volatilidad_cv": 0.25,
+      "caida_pandemia_pct": 99.8
+    }
+  ],
+  "fronteras": [
+    {
+      "nombre": "01 La Aurora",
+      "meses_rellenados": 0,
+      "estacionalidad_acf12": 0.77,
+      "crecimiento_2009_2019_pct": 59,
+      "volatilidad_cv": 0.22,
+      "caida_pandemia_pct": 99.6
+    },
+    {
+      "nombre": "07 Valle Nuevo",
+      "meses_rellenados": 0,
+      "estacionalidad_acf12": 0.49,
+      "crecimiento_2009_2019_pct": 152,
+      "volatilidad_cv": 0.4,
+      "caida_pandemia_pct": 99.9
+    },
+    {
+      "nombre": "09 San Cristóbal",
+      "meses_rellenados": 0,
+      "estacionalidad_acf12": 0.35,
+      "crecimiento_2009_2019_pct": 238,
+      "volatilidad_cv": 0.52,
+      "caida_pandemia_pct": 100.0
+    }
+  ]
+}

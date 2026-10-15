@@ -1,0 +1,62 @@
+{
+  "rutas": {
+    "entrenamiento": "datos/processed/entrenamiento.csv",
+    "prueba": "datos/processed/prueba.csv",
+    "salida_datos": "recursos/datos",
+    "salida_graficos": "recursos/graficos"
+  },
+  "serie": {
+    "tipos_viajero": ["Turista", "Excursionista"],
+    "meses_esperados": 210,
+    "periodo": 12,
+    "inicio_prueba": "2021-04-01"
+  },
+  "estacionalidad": {
+    "pre_pandemia": [2015, 2019],
+    "post_pandemia": [2023, 2025]
+  },
+  "pronostico": {
+    "niveles_confianza": [0.80, 0.95],
+    "nivel_banda_grafico": 0.80,
+    "tope_eje_grafico": 500000,
+    "mae_lab1": 158777,
+    "rmse_lab1": 173709
+  },
+  "paleta": {
+    "fondo": "#FFFFFF",
+    "texto": "#1A1A1A",
+    "texto_secundario": "#595959",
+    "principal": "#1B4F8A",
+    "principal_claro": "#6E97C7",
+    "acento": "#C8553D",
+    "acento_texto": "#B04A35",
+    "acento_banda": "#F4DDD8",
+    "contexto": "#BDBDBD",
+    "rejilla": "#E6E6E6"
+  },
+  "tipografia": {
+    "titulares": {"familia": "Montserrat", "pesos": [700, 800]},
+    "kpis": {"familia": "Montserrat", "pesos": [700]},
+    "texto": {"familia": "Lato", "pesos": [400, 700]},
+    "etiquetas": {"familia": "Lato", "pesos": [400, 700]},
+    "tamanos_pt": {
+      "titulo": 54,
+      "subtitulo": 22,
+      "kpi_cifra": 48,
+      "kpi_texto": 13,
+      "titulo_bloque": 24,
+      "texto": 13,
+      "etiqueta": 11,
+      "fuente_pie": 9
+    }
+  },
+  "lienzo": {
+    "ancho_pulgadas": 11,
+    "alto_pulgadas": 17,
+    "dpi_png": 300
+  },
+  "comparativo": {
+    "regiones": ["América Del Centro", "América Del Norte", "Europa"],
+    "fronteras": ["01 La Aurora", "07 Valle Nuevo", "09 San Cristóbal"]
+  }
+}
