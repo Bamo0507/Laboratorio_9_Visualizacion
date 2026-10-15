@@ -4,124 +4,148 @@
     {
       "nombre": "Terrestre",
       "viajeros": 27592253,
-      "porcentaje": 59.07
+      "porcentaje": 59.07,
+      "porcentaje_1d": 59.1
     },
     {
       "nombre": "Aérea",
       "viajeros": 19019419,
-      "porcentaje": 40.72
+      "porcentaje": 40.72,
+      "porcentaje_1d": 40.7
     },
     {
       "nombre": "Marítima",
       "viajeros": 100241,
-      "porcentaje": 0.21
+      "porcentaje": 0.21,
+      "porcentaje_1d": 0.2
     }
   ],
   "fronteras": [
     {
       "nombre": "01 La Aurora",
       "viajeros": 18989985,
-      "porcentaje": 40.65
+      "porcentaje": 40.65,
+      "porcentaje_1d": 40.7
     },
     {
       "nombre": "07 Valle Nuevo",
       "viajeros": 10143045,
-      "porcentaje": 21.71
+      "porcentaje": 21.71,
+      "porcentaje_1d": 21.7
     },
     {
       "nombre": "09 San Cristóbal",
       "viajeros": 4183632,
-      "porcentaje": 8.96
+      "porcentaje": 8.96,
+      "porcentaje_1d": 9.0
     },
     {
       "nombre": "08 Pedro de Alvarado",
       "viajeros": 3764229,
-      "porcentaje": 8.06
+      "porcentaje": 8.06,
+      "porcentaje_1d": 8.1
     },
     {
       "nombre": "10 La Ermita (Nueva Anguiatú)",
       "viajeros": 2587072,
-      "porcentaje": 5.54
+      "porcentaje": 5.54,
+      "porcentaje_1d": 5.5
     },
     {
       "nombre": "20 Melchor de Mencos",
       "viajeros": 1782864,
-      "porcentaje": 3.82
+      "porcentaje": 3.82,
+      "porcentaje_1d": 3.8
     },
     {
       "nombre": "13 El Cinchado / El Corinto",
       "viajeros": 1213485,
-      "porcentaje": 2.6
+      "porcentaje": 2.6,
+      "porcentaje_1d": 2.6
     },
     {
       "nombre": "11 Agua Caliente",
       "viajeros": 922420,
-      "porcentaje": 1.97
+      "porcentaje": 1.97,
+      "porcentaje_1d": 2.0
     },
     {
       "nombre": "12 El Florido",
       "viajeros": 910373,
-      "porcentaje": 1.95
+      "porcentaje": 1.95,
+      "porcentaje_1d": 1.9
     },
     {
       "nombre": "15 El Carmen",
       "viajeros": 852663,
-      "porcentaje": 1.83
+      "porcentaje": 1.83,
+      "porcentaje_1d": 1.8
     },
     {
       "nombre": "14 Tecún Umán",
       "viajeros": 556896,
-      "porcentaje": 1.19
+      "porcentaje": 1.19,
+      "porcentaje_1d": 1.2
     },
     {
       "nombre": "16 La Mesilla",
       "viajeros": 448513,
-      "porcentaje": 0.96
+      "porcentaje": 0.96,
+      "porcentaje_1d": 1.0
     },
     {
       "nombre": "19 Gracias a Dios",
       "viajeros": 108423,
-      "porcentaje": 0.23
+      "porcentaje": 0.23,
+      "porcentaje_1d": 0.2
     },
     {
       "nombre": "18 Bethel",
       "viajeros": 58673,
-      "porcentaje": 0.13
+      "porcentaje": 0.13,
+      "porcentaje_1d": 0.1
     },
     {
       "nombre": "05 Puerto Barrios",
       "viajeros": 55231,
-      "porcentaje": 0.12
+      "porcentaje": 0.12,
+      "porcentaje_1d": 0.1
     },
     {
       "nombre": "17 El Naranjo",
       "viajeros": 55100,
-      "porcentaje": 0.12
+      "porcentaje": 0.12,
+      "porcentaje_1d": 0.1
     },
     {
       "nombre": "06 Livingston",
       "viajeros": 38191,
-      "porcentaje": 0.08
+      "porcentaje": 0.08,
+      "porcentaje_1d": 0.1
     },
     {
       "nombre": "02 Mundo Maya",
       "viajeros": 34249,
-      "porcentaje": 0.07
+      "porcentaje": 0.07,
+      "porcentaje_1d": 0.1
     },
     {
       "nombre": "03 Puerto Quetzal",
       "viajeros": 5888,
-      "porcentaje": 0.01
+      "porcentaje": 0.01,
+      "porcentaje_1d": 0.0
     },
     {
       "nombre": "04 Santo Tomás de Castilla",
       "viajeros": 931,
-      "porcentaje": 0.0
+      "porcentaje": 0.0,
+      "porcentaje_1d": 0.0
     },
     {
       "nombre": "22 Otra frontera",
       "viajeros": 49,
-      "porcentaje": 0.0
+      "porcentaje": 0.0,
+      "porcentaje_1d": 0.0
     }
   ]
 }

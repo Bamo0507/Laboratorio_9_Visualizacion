@@ -8,7 +8,8 @@ def participacion(columna):
     porcentajes = totales / totales.sum() * 100
     afirmar(abs(porcentajes.sum() - 100) < 1e-6, f"participaciones de {columna} suman 100 %")
     return [
-        {"nombre": nombre, "viajeros": round(float(totales[nombre])), "porcentaje": round(float(porcentajes[nombre]), 2)}
+        {"nombre": nombre, "viajeros": round(float(totales[nombre])), "porcentaje": round(float(porcentajes[nombre]), 2),
+         "porcentaje_1d": round(float(porcentajes[nombre]), 1)}
         for nombre in totales.index
     ]
 
