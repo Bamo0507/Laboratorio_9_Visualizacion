@@ -10,6 +10,7 @@ ETAPAS = [
     "05_pronostico_ses.py",
     "06_comparativo.py",
     "07_verificar_paleta.py",
+    "08_metricas_modelos.py",
 ]
 
 carpeta = Path(__file__).resolve().parent

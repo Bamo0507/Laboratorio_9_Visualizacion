@@ -1,0 +1,42 @@
+{
+  "serie": "Total mensual (Turista + Excursionista)",
+  "evaluacion": "abril 2021 a junio 2026",
+  "datos": [
+    {
+      "modelo": "Suavizamiento exponencial simple",
+      "nombre_lab1": "Suav. exp. simple",
+      "mae": 158777,
+      "rmse": 173709
+    },
+    {
+      "modelo": "Holt-Winters",
+      "nombre_lab1": "Holt-Winters",
+      "mae": 178392,
+      "rmse": 192825
+    },
+    {
+      "modelo": "Seasonal naive",
+      "nombre_lab1": "Seasonal naive",
+      "mae": 207322,
+      "rmse": 219664
+    },
+    {
+      "modelo": "SARIMA (versión 1)",
+      "nombre_lab1": "SARIMA (Modelo 1)",
+      "mae": 219512,
+      "rmse": 234055
+    },
+    {
+      "modelo": "SARIMA (versión 2)",
+      "nombre_lab1": "SARIMA (Modelo 2)",
+      "mae": 228181,
+      "rmse": 244059
+    },
+    {
+      "modelo": "Prophet",
+      "nombre_lab1": "Prophet",
+      "mae": 233092,
+      "rmse": 246956
+    }
+  ]
+}
