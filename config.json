@@ -3,21 +3,34 @@
     "entrenamiento": "datos/processed/entrenamiento.csv",
     "prueba": "datos/processed/prueba.csv",
     "salida_datos": "recursos/datos",
-    "salida_graficos": "recursos/graficos"
+    "salida_graficos": "recursos/graficos",
+    "notebook_mensual": "notebooks/series/Mensual_Series_de_Tiempo.ipynb"
   },
   "serie": {
-    "tipos_viajero": ["Turista", "Excursionista"],
+    "tipos_viajero": [
+      "Turista",
+      "Excursionista"
+    ],
     "meses_esperados": 210,
     "periodo": 12,
     "inicio_prueba": "2021-04-01"
   },
   "estacionalidad": {
-    "pre_pandemia": [2015, 2019],
-    "post_pandemia": [2023, 2025]
+    "pre_pandemia": [
+      2015,
+      2019
+    ],
+    "post_pandemia": [
+      2023,
+      2025
+    ]
   },
   "pronostico": {
-    "niveles_confianza": [0.80, 0.95],
-    "nivel_banda_grafico": 0.80,
+    "niveles_confianza": [
+      0.8,
+      0.95
+    ],
+    "nivel_banda_grafico": 0.8,
     "tope_eje_grafico": 500000,
     "mae_lab1": 158777,
     "rmse_lab1": 173709
@@ -35,10 +48,33 @@
     "rejilla": "#E6E6E6"
   },
   "tipografia": {
-    "titulares": {"familia": "Montserrat", "pesos": [700, 800]},
-    "kpis": {"familia": "Montserrat", "pesos": [700]},
-    "texto": {"familia": "Lato", "pesos": [400, 700]},
-    "etiquetas": {"familia": "Lato", "pesos": [400, 700]},
+    "titulares": {
+      "familia": "Montserrat",
+      "pesos": [
+        700,
+        800
+      ]
+    },
+    "kpis": {
+      "familia": "Montserrat",
+      "pesos": [
+        700
+      ]
+    },
+    "texto": {
+      "familia": "Lato",
+      "pesos": [
+        400,
+        700
+      ]
+    },
+    "etiquetas": {
+      "familia": "Lato",
+      "pesos": [
+        400,
+        700
+      ]
+    },
     "tamanos_pt": {
       "titulo": 54,
       "subtitulo": 22,
@@ -56,7 +92,21 @@
     "dpi_png": 300
   },
   "comparativo": {
-    "regiones": ["América Del Centro", "América Del Norte", "Europa"],
-    "fronteras": ["01 La Aurora", "07 Valle Nuevo", "09 San Cristóbal"]
+    "regiones": [
+      "América Del Centro",
+      "América Del Norte",
+      "Europa"
+    ],
+    "fronteras": [
+      "01 La Aurora",
+      "07 Valle Nuevo",
+      "09 San Cristóbal"
+    ]
+  },
+  "graficos": {
+    "px_por_pulgada": 100,
+    "ancho_completo": 1000,
+    "ancho_medio": 480,
+    "inicio_grafico_pronostico": "2009-01-01"
   }
 }

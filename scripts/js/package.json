@@ -1,0 +1,12 @@
+{
+  "name": "graficos-infografia-lab9",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "graficos": "node generar_todos.js"
+  },
+  "dependencies": {
+    "@observablehq/plot": "^0.6.17",
+    "linkedom": "^0.18.13"
+  }
+}
