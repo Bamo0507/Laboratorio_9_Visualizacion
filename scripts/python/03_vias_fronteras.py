@@ -16,8 +16,14 @@ def participacion(columna):
 
 vias = participacion("Vía")
 fronteras = participacion("Frontera")
+# Qué parte de quienes entran por aire lo hace por La Aurora.
+aerea = detalle[detalle["Vía"] == "Aérea"].groupby("Frontera")["Viajero"].sum()
+aurora_en_aerea = round(float(aerea["01 La Aurora"] / aerea.sum() * 100), 1)
+print(f"  La Aurora dentro de la vía aérea: {aurora_en_aerea} %")
+
 for fila in vias + fronteras[:3]:
     print(f"  {fila['nombre']}: {fila['porcentaje']} %")
 
-guardar_json({"base": "Turista + Excursionista, 2009-01 a 2026-06", "vias": vias, "fronteras": fronteras},
+guardar_json({"base": "Turista + Excursionista, 2009-01 a 2026-06", "vias": vias, "fronteras": fronteras,
+              "aurora_en_aerea_pct": aurora_en_aerea},
              "vias_fronteras")

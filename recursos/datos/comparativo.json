@@ -1,5 +1,9 @@
 {
   "periodo_normal": "2009-2019",
+  "recuperacion": {
+    "anio_base": 2019,
+    "anio_actual": 2025
+  },
   "regiones": [
     {
       "nombre": "América Del Centro",
@@ -7,7 +11,8 @@
       "estacionalidad_acf12": 0.55,
       "crecimiento_2009_2019_pct": 155,
       "volatilidad_cv": 0.36,
-      "caida_pandemia_pct": 96.4
+      "caida_pandemia_pct": 96.4,
+      "recuperacion_pct": 66.0
     },
     {
       "nombre": "América Del Norte",
@@ -15,7 +20,8 @@
       "estacionalidad_acf12": 0.79,
       "crecimiento_2009_2019_pct": 45,
       "volatilidad_cv": 0.24,
-      "caida_pandemia_pct": 97.7
+      "caida_pandemia_pct": 97.7,
+      "recuperacion_pct": 139.3
     },
     {
       "nombre": "Europa",
@@ -23,7 +29,8 @@
       "estacionalidad_acf12": 0.8,
       "crecimiento_2009_2019_pct": 26,
       "volatilidad_cv": 0.25,
-      "caida_pandemia_pct": 99.8
+      "caida_pandemia_pct": 99.8,
+      "recuperacion_pct": 124.8
     }
   ],
   "fronteras": [
@@ -33,7 +40,8 @@
       "estacionalidad_acf12": 0.77,
       "crecimiento_2009_2019_pct": 59,
       "volatilidad_cv": 0.22,
-      "caida_pandemia_pct": 99.6
+      "caida_pandemia_pct": 99.6,
+      "recuperacion_pct": 80.2
     },
     {
       "nombre": "07 Valle Nuevo",
@@ -41,7 +49,8 @@
       "estacionalidad_acf12": 0.49,
       "crecimiento_2009_2019_pct": 152,
       "volatilidad_cv": 0.4,
-      "caida_pandemia_pct": 99.9
+      "caida_pandemia_pct": 99.9,
+      "recuperacion_pct": 71.7
     },
     {
       "nombre": "09 San Cristóbal",
@@ -49,7 +58,8 @@
       "estacionalidad_acf12": 0.35,
       "crecimiento_2009_2019_pct": 238,
       "volatilidad_cv": 0.52,
-      "caida_pandemia_pct": 100.0
+      "caida_pandemia_pct": 100.0,
+      "recuperacion_pct": 90.2
     }
   ]
 }

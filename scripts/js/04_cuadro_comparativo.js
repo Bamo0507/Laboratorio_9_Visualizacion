@@ -1,70 +1,111 @@
 import * as Plot from "@observablehq/plot";
-import { ANCHO, ESTILO, FUENTE_ETIQUETA, FUENTE_TEXTO, PALETA, documento, guardarSvg, leerDatos } from "./comun.js";
+import { ESTILO, FUENTE_ETIQUETA, FUENTE_SECUNDARIA, PALETA, afirmar, documento, guardarSvg, leerDatos, tamano } from "./comun.js";
 
-const { regiones, fronteras } = leerDatos("comparativo");
+const NOMBRE = "04_cuadro_comparativo";
+const [ancho, alto] = tamano(NOMBRE);
+const { regiones, fronteras, recuperacion } = leerDatos("comparativo");
 const nombreVisible = (nombre) => nombre.replace(/^\d+\s+/, "").replace("Del ", "del ");
 const SEPARADOR = " ";
 // Solo se destaca una serie si supera a la segunda por al menos 1 %; si no, sería exagerar una diferencia de décimas.
 const MARGEN_GANADOR = 0.01;
 
 const PANELES = [
-  { campo: "estacionalidad_acf12", titulo: "¿Cuál repite más su patrón cada año?", nota: "Escala de 0 a 1", dominio: [0, 1], formato: (v) => v.toFixed(2) },
-  { campo: "crecimiento_2009_2019_pct", titulo: "¿Cuál creció más entre 2009 y 2019?", nota: "Crecimiento en %", dominio: [0, 250], formato: (v) => `${v} %` },
-  { campo: "volatilidad_cv", titulo: "¿Cuál varía más respecto a su promedio?", nota: "Mayor valor = meses más dispersos", dominio: [0, 0.6], formato: (v) => v.toFixed(2) },
-  { campo: "caida_pandemia_pct", titulo: "¿A cuál golpeó más la pandemia?", nota: "Caída del peor mes de 2020 frente a 2019", dominio: [0, 100], formato: (v) => `${v.toFixed(1)} %` },
+  { campo: "estacionalidad_acf12", titulo: ["¿Cuál repite más", "su patrón cada año?"], notas: ["1 = repite el mismo patrón"], dominio: [0, 1], formato: (v) => v.toFixed(2) },
+  { campo: "crecimiento_2009_2019_pct", titulo: ["¿Cuál creció más", "entre 2009 y 2019?"], notas: ["Crecimiento en %"], dominio: [0, 250], formato: (v) => `${v} %` },
+  { campo: "volatilidad_cv", titulo: ["¿Cuál varía más", "de un mes a otro?"], notas: ["Cuánto se alejan sus meses", "del promedio, en %"], dominio: [0, 0.6], formato: (v) => `${Math.round(v * 100)} %` },
+  {
+    campo: "recuperacion_pct", titulo: ["¿Cuál ya volvió", `al nivel de ${recuperacion.anio_base}?`],
+    notas: [`${recuperacion.anio_actual} como % de ${recuperacion.anio_base} (línea = 100)`, "Desde 2023 el INGUAT excluye", "compradores fronterizos"],
+    dominio: [0, 150], formato: (v) => `${Math.round(v)} %`, referencia: 100,
+  },
 ];
 
 function ganador(grupo, campo) {
-  const ordenados = [...grupo].sort((a, b) => b[campo] - a[campo]);
-  const [primero, segundo] = ordenados;
+  const [primero, segundo] = [...grupo].sort((a, b) => b[campo] - a[campo]);
   return (primero[campo] - segundo[campo]) / primero[campo] >= MARGEN_GANADOR ? primero.nombre : null;
 }
 
-const ANCHO_PANEL = (ANCHO - 40) / 2;
-const ALTO_PANEL = 230;
-const ALTO_TITULO = 52;
+// En recuperación el azul marca a quien ya superó el nivel base y el coral al más rezagado, igual que en el resto de la página.
+const todas = [...regiones, ...fronteras];
+const rezagada = todas.reduce((a, b) => (b.recuperacion_pct < a.recuperacion_pct ? b : a));
+function colorRecuperacion(d) {
+  if (d.nombre === rezagada.nombre) return "rezago";
+  return d.recuperacion_pct >= 100 ? "destacado" : "normal";
+}
 
-function panel({ campo, dominio, formato }) {
+const COLORES = {
+  destacado: { barra: PALETA.principal, texto: PALETA.principal, peso: 700 },
+  rezago: { barra: PALETA.acento, texto: PALETA.acento_texto, peso: 700 },
+  normal: { barra: PALETA.contexto, texto: PALETA.texto_secundario, peso: 400 },
+};
+
+const centro = regiones.find((d) => d.nombre === "América Del Centro");
+afirmar(rezagada === centro, "Centroamérica es la serie más rezagada");
+afirmar(ganador(regiones, "crecimiento_2009_2019_pct") === centro.nombre, "Centroamérica fue la región que más creció");
+const superan = regiones.filter((d) => d.recuperacion_pct >= 100).map((d) => nombreVisible(d.nombre).replace("América del ", ""));
+afirmar(superan.join(",") === "Norte,Europa", "Norteamérica y Europa superan el nivel base");
+const lectura = `Norteamérica y Europa ya superan ${recuperacion.anio_base}; Centroamérica, la que más había crecido, está en ${Math.round(centro.recuperacion_pct)} %.`;
+
+const ALTO_LECTURA = 30;
+const ANCHO_ETIQUETAS = 142;
+const SEPARACION = 14;
+const ANCHO_PANEL = (ancho - ANCHO_ETIQUETAS - SEPARACION * 3) / 4;
+const ALTO_ENCABEZADO = 92;
+const ALTO_GRAFICO = alto - ALTO_LECTURA - ALTO_ENCABEZADO;
+const orden = [...regiones.map((d) => nombreVisible(d.nombre)), SEPARADOR, ...fronteras.map((d) => nombreVisible(d.nombre))];
+
+function panel({ campo, dominio, formato, referencia }, conEtiquetas) {
   const destacados = [ganador(regiones, campo), ganador(fronteras, campo)].filter(Boolean);
-  const filas = [...regiones, ...fronteras].map((d) => ({ serie: nombreVisible(d.nombre), valor: d[campo], destacado: destacados.includes(d.nombre) }));
-  const orden = [...regiones.map((d) => nombreVisible(d.nombre)), SEPARADOR, ...fronteras.map((d) => nombreVisible(d.nombre))];
-  const svg = Plot.plot({
+  const filas = todas.map((d) => ({
+    serie: nombreVisible(d.nombre),
+    valor: d[campo],
+    tono: COLORES[referencia ? colorRecuperacion(d) : destacados.includes(d.nombre) ? "destacado" : "normal"],
+  }));
+  return Plot.plot({
     document: documento(),
-    width: ANCHO_PANEL,
-    height: ALTO_PANEL,
-    marginLeft: 140,
-    marginRight: 64,
-    marginTop: 6,
-    marginBottom: 28,
+    width: ANCHO_PANEL + (conEtiquetas ? ANCHO_ETIQUETAS : 0),
+    height: ALTO_GRAFICO,
+    marginLeft: conEtiquetas ? ANCHO_ETIQUETAS : 2,
+    marginRight: 50,
+    marginTop: 2,
+    marginBottom: 2,
     style: ESTILO,
-    x: { domain: dominio, label: null, ticks: 4 },
-    y: { domain: orden, label: null, padding: 0.2 },
+    x: { domain: dominio, label: null, axis: null },
+    y: { domain: orden, label: null, padding: 0.18, axis: null },
     marks: [
-      Plot.axisY({ tickSize: 0, fill: PALETA.texto }),
-      Plot.axisX({ ticks: 4, fill: PALETA.texto_secundario, stroke: PALETA.contexto }),
-      Plot.barX(filas, { x: "valor", y: "serie", fill: (d) => (d.destacado ? PALETA.acento : PALETA.contexto) }),
+      conEtiquetas ? Plot.axisY({ tickSize: 0, fill: PALETA.texto, tickFormat: (d) => (d === SEPARADOR ? "" : d) }) : null,
+      conEtiquetas ? Plot.text([SEPARADOR], { y: (d) => d, frameAnchor: "left", dx: -ANCHO_ETIQUETAS, textAnchor: "start", text: () => "Fronteras", fill: PALETA.texto_secundario, fontWeight: 700, fontSize: FUENTE_SECUNDARIA }) : null,
+      referencia ? Plot.ruleX([referencia], { stroke: PALETA.texto_secundario, strokeDasharray: "3,3" }) : null,
+      Plot.barX(filas, { x: "valor", y: "serie", fill: (d) => d.tono.barra }),
       Plot.ruleX([0], { stroke: PALETA.contexto }),
-      Plot.text(filas.filter((d) => d.destacado), { x: "valor", y: "serie", text: (d) => formato(d.valor), textAnchor: "start", dx: 6, fill: PALETA.acento_texto, fontWeight: 700 }),
+      // Bajo la referencia la cifra va dentro de la barra para que la línea punteada no la cruce.
+      ...[
+        { filtro: (d) => !referencia || d.valor >= referencia, ancla: "start", dx: 4, color: (d) => d.tono.texto },
+        { filtro: (d) => referencia && d.valor < referencia, ancla: "end", dx: -4, color: (d) => (d.tono === COLORES.rezago ? PALETA.fondo : PALETA.texto) },
+      ].map(({ filtro, ancla, dx, color }) =>
+        Plot.text(filas.filter(filtro), { x: "valor", y: "serie", text: (d) => formato(d.valor), textAnchor: ancla, dx, fill: color, fontWeight: (d) => d.tono.peso })
+      ),
     ],
-  });
-  const sinGanadorFronteras = !destacados.some((n) => fronteras.some((f) => f.nombre === n));
-  return { svg: svg.outerHTML, sinGanadorFronteras };
+  }).outerHTML;
 }
 
 const partes = PANELES.map((p, i) => {
-  const x = (i % 2) * (ANCHO_PANEL + 40);
-  const y = Math.floor(i / 2) * (ALTO_PANEL + ALTO_TITULO + 20);
-  const { svg, sinGanadorFronteras } = panel(p);
-  const nota = sinGanadorFronteras ? `${p.nota}; las tres fronteras cayeron casi igual` : p.nota;
-  return `<g transform="translate(${x},${y})">
-    <text x="0" y="20" font-size="${FUENTE_TEXTO}" font-weight="700" fill="${PALETA.texto}">${p.titulo}</text>
-    <text x="0" y="42" font-size="${FUENTE_ETIQUETA - 1}" fill="${PALETA.texto_secundario}">${nota}</text>
-    <g transform="translate(0,${ALTO_TITULO})">${svg}</g>
+  const conEtiquetas = i === 0;
+  const x = i === 0 ? 0 : ANCHO_ETIQUETAS + i * (ANCHO_PANEL + SEPARACION);
+  const xTexto = conEtiquetas ? ANCHO_ETIQUETAS : 0;
+  return `<g transform="translate(${x},0)">
+    <text x="${xTexto}" y="16" font-size="${FUENTE_ETIQUETA}" font-weight="700" fill="${PALETA.texto}">${p.titulo[0]}</text>
+    <text x="${xTexto}" y="34" font-size="${FUENTE_ETIQUETA}" font-weight="700" fill="${PALETA.texto}">${p.titulo[1]}</text>
+    ${p.notas.map((n, j) => `<text x="${xTexto}" y="${52 + j * 15}" font-size="${FUENTE_SECUNDARIA}" fill="${PALETA.texto_secundario}">${n}</text>`).join("")}
+    ${conEtiquetas ? `<text x="0" y="${ALTO_ENCABEZADO - 6}" font-size="${FUENTE_SECUNDARIA}" font-weight="700" fill="${PALETA.texto_secundario}">Mercados de origen</text>` : ""}
+    <g transform="translate(0,${ALTO_ENCABEZADO})">${panel(p, conEtiquetas)}</g>
   </g>`;
 });
 
-const altoTotal = 2 * (ALTO_PANEL + ALTO_TITULO) + 20;
 guardarSvg(
-  "04_cuadro_comparativo",
-  `<svg xmlns="http://www.w3.org/2000/svg" width="${ANCHO}" height="${altoTotal}" viewBox="0 0 ${ANCHO} ${altoTotal}" style="font-family:${ESTILO.fontFamily};background:${PALETA.fondo}">${partes.join("")}</svg>`
+  NOMBRE,
+  `<svg xmlns="http://www.w3.org/2000/svg" width="${ancho}" height="${alto}" viewBox="0 0 ${ancho} ${alto}" style="font-family:${ESTILO.fontFamily};background:${PALETA.fondo}">
+  <text x="0" y="18" font-size="${FUENTE_ETIQUETA + 1}" font-weight="700" fill="${PALETA.texto}">${lectura}</text>
+  <g transform="translate(0,${ALTO_LECTURA})">${partes.join("")}</g>
+</svg>`
 );

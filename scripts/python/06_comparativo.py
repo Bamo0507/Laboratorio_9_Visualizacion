@@ -1,7 +1,7 @@
 import pandas as pd
 from statsmodels.tsa.stattools import acf
 
-from comun import CONFIG, afirmar, guardar_json, ruta
+from comun import CONFIG, afirmar, cargar_detalle, guardar_json, ruta
 
 entrenamiento = pd.read_csv(ruta("entrenamiento"), parse_dates=["Fecha"])
 print(f"[cargado]  entrenamiento -> {len(entrenamiento):,} filas")
@@ -33,9 +33,23 @@ def comparar(columna, nombres):
     return filas
 
 
+# La recuperación no está en el Lab 1: usa la base completa porque entrenamiento termina en marzo de 2021.
+detalle = cargar_detalle()
+BASE, ACTUAL = CONFIG["comparativo"]["recuperacion"]["anio_base"], CONFIG["comparativo"]["recuperacion"]["anio_actual"]
+
+
+def agregar_recuperacion(filas, columna):
+    anual = detalle.groupby([columna, "Año"])["Viajero"].sum()
+    for fila in filas:
+        fila["recuperacion_pct"] = round(float(anual[(fila["nombre"], ACTUAL)] / anual[(fila["nombre"], BASE)] * 100), 1)
+        print(f"  {fila['nombre']}: {ACTUAL} = {fila['recuperacion_pct']} % de {BASE}")
+    return filas
+
+
 comparativo = {
     "periodo_normal": "2009-2019",
-    "regiones": comparar("Región dos", CONFIG["comparativo"]["regiones"]),
-    "fronteras": comparar("Frontera", CONFIG["comparativo"]["fronteras"]),
+    "recuperacion": {"anio_base": BASE, "anio_actual": ACTUAL},
+    "regiones": agregar_recuperacion(comparar("Región dos", CONFIG["comparativo"]["regiones"]), "Región dos"),
+    "fronteras": agregar_recuperacion(comparar("Frontera", CONFIG["comparativo"]["fronteras"]), "Frontera"),
 }
 guardar_json(comparativo, "comparativo")

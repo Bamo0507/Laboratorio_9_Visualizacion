@@ -6,8 +6,8 @@ import { parseHTML } from "linkedom";
 export const RAIZ = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 export const CONFIG = JSON.parse(readFileSync(join(RAIZ, "config.json"), "utf-8"));
 export const PALETA = CONFIG.paleta;
-export const ANCHO = CONFIG.graficos.ancho_completo;
-export const ANCHO_MEDIO = CONFIG.graficos.ancho_medio;
+// Cada gráfico se genera al tamaño exacto de su espacio en la página, para no escalarlo en Canva.
+export const tamano = (nombre) => CONFIG.graficos.tamanos_px[nombre];
 export const MESES = ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"];
 
 const DIR_DATOS = join(RAIZ, CONFIG.rutas.salida_datos);
@@ -17,6 +17,7 @@ const DIR_GRAFICOS = join(RAIZ, CONFIG.rutas.salida_graficos);
 export const px = (pt) => Math.round((pt * CONFIG.graficos.px_por_pulgada) / 72);
 export const FUENTE_ETIQUETA = px(CONFIG.tipografia.tamanos_pt.etiqueta);
 export const FUENTE_TEXTO = px(CONFIG.tipografia.tamanos_pt.texto);
+export const FUENTE_SECUNDARIA = FUENTE_ETIQUETA - 2;
 
 export const ESTILO = {
   fontFamily: `${CONFIG.tipografia.etiquetas.familia}, sans-serif`,

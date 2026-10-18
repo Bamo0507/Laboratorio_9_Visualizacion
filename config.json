@@ -92,6 +92,7 @@
     "dpi_png": 300
   },
   "comparativo": {
+    "recuperacion": {"anio_base": 2019, "anio_actual": 2025},
     "regiones": [
       "América Del Centro",
       "América Del Norte",
@@ -105,8 +106,30 @@
   },
   "graficos": {
     "px_por_pulgada": 100,
-    "ancho_completo": 1000,
-    "ancho_medio": 480,
-    "inicio_grafico_pronostico": "2009-01-01"
+    "inicio_grafico_pronostico": "2016-01-01",
+    "tamanos_px": {
+      "01_linea_historica": [
+        1020,
+        260
+      ],
+      "02_estacionalidad": [
+        500,
+        260
+      ],
+      "03_vias": [500, 115],
+      "03_fronteras": [500, 145],
+      "04_cuadro_comparativo": [
+        1020,
+        260
+      ],
+      "05_modelos": [
+        390,
+        250
+      ],
+      "06_pronostico": [
+        620,
+        250
+      ]
+    }
   }
 }
