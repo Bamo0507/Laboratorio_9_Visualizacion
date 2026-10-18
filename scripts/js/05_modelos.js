@@ -15,18 +15,22 @@ const datos = leerDatos("metricas_modelos").datos.map((d) => ({ ...d, nombre: CO
 const mejor = datos[0];
 afirmar(datos.every((d) => d.mae >= mejor.mae), "el primer modelo es el de menor MAE");
 const lectura = `Hasta el mejor se equivoca en ${Math.round(mejor.mae / 1000)} mil al mes`;
+// El RMSE va como nota porque ordena a los modelos igual que el MAE; así se muestra sin duplicar las seis cifras.
+afirmar(datos.every((d, i) => i === 0 || d.rmse >= datos[i - 1].rmse), "el RMSE ordena a los modelos igual que el MAE");
+const notaRmse = `RMSE: de ${miles(mejor.rmse)} a ${miles(datos.at(-1).rmse)}, en el mismo orden`;
 const ALTO_LECTURA = 26;
+const ALTO_NOTA = 20;
 
 const grafico = Plot.plot({
   document: documento(),
   width: ancho,
-  height: alto - ALTO_LECTURA,
+  height: alto - ALTO_LECTURA - ALTO_NOTA,
   marginLeft: 172,
   marginRight: 66,
   marginTop: 4,
   marginBottom: 40,
   style: ESTILO,
-  x: { domain: [0, 250000], label: "Error promedio al mes" },
+  x: { domain: [0, 250000], label: "Error promedio al mes (MAE)" },
   y: { domain: datos.map((d) => d.nombre), label: null, padding: 0.18 },
   marks: [
     Plot.axisY({ tickSize: 0, fill: PALETA.texto }),
@@ -45,5 +49,6 @@ guardarSvg(
   `<svg xmlns="http://www.w3.org/2000/svg" width="${ancho}" height="${alto}" viewBox="0 0 ${ancho} ${alto}" style="font-family:${ESTILO.fontFamily};background:${PALETA.fondo}">
   <text x="0" y="17" font-size="${FUENTE_ETIQUETA}" font-weight="700" fill="${PALETA.texto}">${lectura}</text>
   <g transform="translate(0,${ALTO_LECTURA})">${grafico.outerHTML}</g>
+  <text x="0" y="${alto - 5}" font-size="${FUENTE_SECUNDARIA}" fill="${PALETA.texto_secundario}">${notaRmse}</text>
 </svg>`
 );
